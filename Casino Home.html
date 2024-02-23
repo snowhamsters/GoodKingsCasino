@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Casino</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+	<link rel = "stylesheet" href="style.css">
+</head>
+
+<body>
+	<!-- Creates a custom header-component defined in js -->
+	<header-component></header-component>
+	
+	<div class="container">
+		<p>
+		<img id="king" src="smiling-purple-king-upscaled_preview_rev_1.png" width="300px"/>
+<br><br><br>
+		<img id="logo" src="Casino Logo_preview_rev_1.png" width="500px"/>
+		</p>
+<br>
+		<p id="maintxt">
+		At good Kings Casino we provide a fun and safe environment for users to gamble from the comfort of their homes. Our Online Casino houses a large variety of games ranging from the most popular to the most obscure. You won't regret spending time on our site. All users must create an account and comply with their states laws and legality.   
+		</p><br><br><br><br><br><br>
+		<h2 class="games">Most Popular Games</h2>
+	
+
+<!-- Carousel showcasing a few pictures -->
+		<div id="gamesCarousel" class="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="slots.jpg" class="d-block w-100">
+					<div class="carousel-caption d-none d-md-block">
+						<h3>Slots</h3>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="blackjack.jpg" class="d-block w-100">
+					<div class="carousel-caption d-none d-md-block">
+						<h3>Blackjack</h3>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="roulette.jpg" class="d-block w-100">
+					<div class="carousel-caption d-none d-md-block">
+						<h3>Roulette</h3>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#gamesCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#gamesCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</div>
+	
+	<!-- Creates a custom footer-component defined in js -->
+	<footer-component></footer-component>
+
+	<!-- Without this, there will be an error in js although we don't use the carousel on this page -->
+	<div id="gamesCarousel"></div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" type="text/javascript"></script>
+	<script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
