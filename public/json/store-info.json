@@ -1,0 +1,22 @@
+{
+    "items": [
+        {
+            "name": "10 tokens",
+            "desc": "description",
+            "price": "$9.99",
+            "img": "/images/store-img-1"
+        },
+        {
+            "name": "25 tokens",
+            "desc": "description",
+            "price": "$23.50",
+            "img": "/images/store-img-2"
+        },
+        {
+            "name": "80 tokens",
+            "desc": "",
+            "price": "$74.95",
+            "img": "/images/store-img-3"
+        }
+    ]
+}

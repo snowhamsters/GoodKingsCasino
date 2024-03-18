@@ -1,0 +1,23 @@
+{
+  "name": "goodkingscasino",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node public/express.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snowhamsters/GoodKingsCasino.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snowhamsters/GoodKingsCasino/issues"
+  },
+  "homepage": "https://github.com/snowhamsters/GoodKingsCasino#readme",
+  "dependencies": {
+    "express": "^4.18.3",
+    "path": "^0.12.7"
+  }
+}
