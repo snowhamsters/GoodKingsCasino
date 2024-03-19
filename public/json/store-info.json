@@ -1,22 +1,46 @@
 {
     "items": [
         {
+            "id": "1",
+            "name": "5 tokens",
+            "desc": "This is a description.",
+            "price": "$5.99",
+            "img": "/images/store-img-1.jpg"
+        },
+        {
+            "id": "2",
             "name": "10 tokens",
-            "desc": "description",
             "price": "$9.99",
-            "img": "/images/store-img-1"
+            "desc": "This is a description.",
+            "img": "/images/store-img-2.jpg"
         },
         {
+            "id": "3",
             "name": "25 tokens",
-            "desc": "description",
             "price": "$23.50",
-            "img": "/images/store-img-2"
+            "desc": "This is a description.",
+            "img": "/images/store-img-3.jpg"
         },
         {
-            "name": "80 tokens",
-            "desc": "",
-            "price": "$74.95",
-            "img": "/images/store-img-3"
+            "id": "4",
+            "name": "60 tokens",
+            "price": "$54.99",
+            "desc": "This is a description.",
+            "img": "/images/store-img-3.jpg"
+        },
+        {
+            "id": "5",
+            "name": "130 tokens",
+            "price": "$114.99",
+            "desc": "This is a description.",
+            "img": "/images/store-img-3.jpg"
+        },
+        {
+            "id": "6",
+            "name": "270 tokens",
+            "price": "$204.99",
+            "desc": "This is a description.",
+            "img": "/images/store-img-3.jpg"
         }
     ]
 }
