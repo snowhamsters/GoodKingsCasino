@@ -11,9 +11,14 @@ app.use(express.static('public'))
 
 // Gets a local json file. Needs to be changed to get from a db
 let storeJSON = require('./public/json/store-info.json');
+let contactJSON = require('./public/json/contact-info.json');
 
 app.get("/store-info", (req, res) => {
     res.json(storeJSON);
+});
+
+app.get("/contact-info", (req, res) => {
+    res.json(contactJSON);
 });
 
 /* Route Handlers */

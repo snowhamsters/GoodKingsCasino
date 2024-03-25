@@ -1,22 +1,8 @@
 {   
-"contact info": [
-{
     "id": "contact",
     "name": "Good Kings Casino",
-    "email": "Email: info@GoodKingsCasino.com",
-    "phone": "Phone: (555) 555-5555 ",
-    "address": "Address: 303 E Kearsley St, Flint, MI 48502",
-    "website": "Website: www.GoodKingsCasino.com"
-
-
-}
-
-
-
-
-
-]
-
-
-
+    "email": "info@GoodKingsCasino.com",
+    "phone": "(555) 555-5555 ",
+    "address": "303 E Kearsley St, Flint, MI 48502",
+    "website": "www.GoodKingsCasino.com"
 }
