@@ -8,6 +8,7 @@ app.set('view engine', 'html');
 app.set('views', path.join(__dirname, 'views'));
 // static express files
 app.use(express.static('public'))
+app.use('/node_modules', express.static(path.join(__dirname, 'node_modules')));
 
 // Gets a local json file. Needs to be changed to get from a db
 let storeJSON = require('./public/json/store-info.json');
@@ -33,6 +34,10 @@ app.get("/home", (req, res) => {
 
 app.get("/games", (req, res) => {
     res.render("games");
+});
+
+app.get("/roulette", (req, res) => {
+    res.render("roulette");
 });
 
 app.get("/store", (req, res) => {

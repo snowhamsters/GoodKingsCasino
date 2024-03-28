@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts" : {
-    "test" : "echo 'Error: no test specified'; false"
+  "scripts": {
+    "test": "echo 'Error: no test specified'; false"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/snowhamsters/GoodKingsCasino#readme",
   "dependencies": {
+    "animejs": "^3.2.2",
     "ejs": "^3.1.9",
     "express": "^4.18.3",
     "path": "^0.12.7"

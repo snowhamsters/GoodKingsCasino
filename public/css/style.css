@@ -1,20 +1,20 @@
-body{
+body {
 	background-color: rgb(23, 2, 31);
 	color: white;
 	padding-left:10px;
 	font-family: georgia, serif;
 }
 
-.container{
+.container {
 	background-color: rgb(34, 6, 34); 
 	padding: 150px;
 }
 
-a{
+a {
 	color: inherit;
 } 
 
-h1{
+h1 {
 	color: white;
 }
 /* 
@@ -39,8 +39,6 @@ h1{
 	padding-bottom: 25px;
 } */
 
-
-
 .accordion-item{
 	background-color: #444444;
 	color: #FFFFFF;
@@ -56,24 +54,54 @@ h1{
 	color: #FFFFFF;
 }
 
-#king {
-margin-right: -800;
-position: absolute;
-right: 285px;
+#roulette-ball {
+	height: 1.25vw;
+	width: 1.25vw;
+	border-radius: 1.25vw;
+	background-color: white;
+	position: relative;
+	top: 4.85vw;
+	left: 9.4vw;
+	z-index: 1;
+}
 
+#roulette-wheel {
+    width: 20vw;
+    height: auto;
+}
+
+.roulette-black {
+	background-color: black;
+}
+
+.roulette-red {
+	background-color: red;
+}
+
+.roulette-green {
+	background-color: rgb(70, 120, 70);
+	text-align: center;
+}
+
+.selected-bet {
+	background-color: rgb(240, 240, 50);
+	color: black;
+}
+
+#king {
+	margin-right: -800;
+	position: absolute;
+	right: 285px;
 }
 
 #maintxt {
-font-size: 20px
-
+	font-size: 20px
 }
 
 #logo{
-display: block;
-margin-left: auto;
-margin-right: auto;
-
-
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .games{
