@@ -5,13 +5,14 @@ $(function() {
 		for (let el in response.items) {
 			let item = response.items[el];
 			// Using bootstrap columns, we include a length of 4. This means every 3 items is a new row
-			let column = $('<div class="col-md-4"></div>');
+			let column = $('<div class="col-lg-4"></div>');
 			// HTML allows us to add formatting, imgs, and links. We can also use classes/ids and edit them in css
 			let itemHTML = '<div class="store-item">' +
 					'<a href="store/purchase?id=' + item.id + '"> <h4>' + item.name + '</h4> </a>' +
-					'<p>' + item.desc + '</p>' +
-					'<p>' + item.price + '</p>' +
 					'<a href="store/purchase?id=' + item.id + '"> <img src="' + item.img + '"/> </a>' +
+					'<p>' + item.price + '</p>' +
+					'<p>' + item.desc + '</p>' +
+					'<br><br><br>' +
 					'</div>';
 			column.append(itemHTML);
 			// By appending each item, this row will have several columns. Although it is 1 row element,

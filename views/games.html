@@ -14,51 +14,40 @@
 	<header-component></header-component>
 
 	<div class="container">
-		<p>
 		<h1 class = "games">Games</h1>
-		</p>
-
-		<button class="btn btn-outline-light me-3" type="button"><a href="/roulette">Play Roulette</a></button>
-
-		<!-- Carousel showcasing a few pictures -->
-		<div id="gamesCarousel" class="carousel">
-			<div class="carousel-indicators">
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-			</div>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img src="images/roulette.jpg" class="d-block w-100">
-					<div class="carousel-caption d-none d-md-block">
-						<h3>Roulette</h3>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<img src="images/blackjack.jpg" class="d-block w-100">
-					<div class="carousel-caption d-none d-md-block">
-						<h3>Blackjack</h3>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<img src="images/slots.jpg" class="d-block w-100">
-					<div class="carousel-caption d-none d-md-block">
-						<h3>Slots</h3>
-					</div>
-				</div>
-			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#gamesCarousel" data-bs-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#gamesCarousel" data-bs-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</button>
-		</div>
-		<br>
-		<h3>How To Play</h3>
 		
+		<br>
+
+		<div class="row">
+			<div class="col-md-6">
+				<a href="/roulette"> <h3>Roulette</h3> </a>
+				<a href="/roulette"> <img src="images/roulette.jpg" class="game-icon"/> </a>
+			</div>
+			<div class="col-md-6">
+				<a href="games/play?id=Poker"> <h3>Poker</h3> </a>
+				<a href="games/play?id=Poker"> <img src="images/poker_coming_soon.jpg" class="game-icon"/> </a>
+			</div>
+			<div class="col-md-6"><br><br></div>
+			<div class="col-md-6"><br><br></div>
+			<div class="col-md-6">
+				<a href="games/play?id=Blackjack"> <h3>Blackjack</h3> </a>
+				<a href="games/play?id=Blackjack"> <img src="images/blackjack_coming_soon.jpg" class="game-icon"/> </a>
+			</div>
+			<div class="col-md-6">
+				<a href="games/play?id=Slots"> <h3>Slots</h3> </a>
+				<a href="games/play?id=Slots"> <img src="images/slots_coming_soon.jpg" class="game-icon"/> </a>
+			</div>
+			<div class="col-md-6"><br><br></div>
+			<div class="col-md-6"><br><br></div>
+			<div class="col-md-6">
+				<a href="games/play?id=Poker 2"> <h3>Poker 2</h3> </a>
+				<a href="games/play?id=Poker 2"> <img src="images/poker2_coming_soon.jpg" class="game-icon"/> </a>
+			</div>
+		</div>
+
+		<br><br>
+
+		<h3>How To Play</h3>
 		<!-- Accordion displaying information about a few games -->
 		<div class="accordion" id="accordionGames">
 			<div class="accordion-item">
@@ -69,42 +58,33 @@
 				</h2>
 				<div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionGames">
 					<div class="accordion-body">
-						<h5>The Roulette Wheel:</h5>
-						<p>
-							The roulette wheel has numbered pockets ranging from 0 to 36 (in European and French roulette) or 00 to 36 (in American roulette).
-							The numbers are alternately colored red and black, except for the 0 (and 00 in American roulette), which is typically green.
-							The arrangement of numbers on the wheel varies between the American and European/French versions.
-						</p>
-						<h5>Types of Bets:</h5>
-						<p>
-							Inside Bets: These are bets placed on specific numbers or combinations of numbers within the number grid on the roulette table.
-							Straight Bet: Betting on a single number.
-							Split Bet: Betting on two adjacent numbers by placing chips on the line between them.
-							Street Bet: Betting on three numbers in a horizontal line by placing chips on the edge of the row.
-							Corner Bet: Betting on four numbers that form a square by placing chips on the intersection of their corners.
-							Six Line Bet: Betting on two adjacent rows of numbers, covering six numbers in total.
-						</p>
-						<h5>Outside Bets:</h5>
-						<p>
-							These are bets placed outside the number grid, typically betting on larger groups of numbers or characteristics of the numbers.
-							Red or Black: Betting on whether the ball will land on a red or black pocket.
-							Odd or Even: Betting on whether the ball will land on an odd or even number.
-							Low or High: Betting on whether the ball will land on a low (1-18) or high (19-36) number.
-							Dozens: Betting on one of three groups of 12 numbers (1-12, 13-24, or 25-36).
-							Columns: Betting on one of three vertical columns of numbers.
-							Snake Bet: A specific bet on the numbers 1, 5, 9, 12, 14, 16, 19, 23, 27, 30, 32, and 34. This bet is not available on all roulette tables.
-						</p>
-						<h5>Placing Bets:</h5>
-						<p>
-							Players place their bets on the roulette table layout before the wheel is spun.
-							Each player's chips have a distinct color to differentiate bets.
-							There are minimum and maximum bet limits for each type of bet, which are displayed on the table.
-						</p>
-						<h5>Spinning the Wheel:</h5>
-						<p>
-							Once all bets are placed, the dealer (or croupier) spins the roulette wheel in one direction and spins the ball in the opposite direction around the edge of the wheel.
-							Eventually, the ball loses momentum and falls into one of the numbered pockets on the wheel.
-						</p>
+						<h4>The Roulette Wheel:</h4>
+							<p>The roulette wheel has numbered pockets ranging from 0 to 36.</p>
+							<p>The numbers are alternately colored red and black, except for the 0, which is green.</p>
+							<p>The arrangement of numbers on the wheel is the European version.</p>
+							<p>Players place their bets on the roulette table layout before the wheel is spun.</p>
+						<h4>Inside Bets:</h4>
+							<p>Straight Bet: Betting on a single number.</p>
+						<h4>Outside Bets:</h4>
+							<p>These are bets placed outside the number grid, typically betting on larger groups of numbers or characteristics of the numbers.</p>
+							<p>Red or Black: Betting on whether the ball will land on a red or black pocket.</p>
+							<p>Odd or Even: Betting on whether the ball will land on an odd or even number.</p>
+							<p>Low or High: Betting on whether the ball will land on a low (1-18) or high (19-36) number.</p>
+							<p>Dozen: Betting on one of three groups of 12 numbers (1-12, 13-24, or 25-36).</p>
+							<p>Column: Normally, betting on one of three vertical columns of numbers. On our table this is betting on the three horizontal rows of numbers.</p>
+						<h4>Spinning the Wheel:</h4>
+							<p>Once a bet is placed, the roulette wheel can spin.</p>
+							<p>the ball falls into one of the numbered pockets on the wheel.</p>
+						<h4>Odds and Payout:</h4>
+							<h5>Straight Bet (Single Number):</h5>
+							<p>Payout = 35:1</p>
+							<p>Odds   = 2.70%</p>
+							<h5>12 Numbers(Column/Dozen):</h5>
+							<p>Payout = 2:1</p>
+							<p>Odds   = 32.43%</p>
+							<h5>18 Numbers (Red, Black, Even, Odd, Low, & High):</h5>
+							<p>Payout = 1:1</p>
+							<p>Odds   = 48.65%</p>
 					</div>
 				</div>
 			</div>

@@ -36,6 +36,10 @@ app.get("/games", (req, res) => {
     res.render("games");
 });
 
+app.get("/games/play", (req, res) => {
+    res.status(404).send(req.query.id + " Coming Soon");
+});
+
 app.get("/roulette", (req, res) => {
     res.render("roulette");
 });

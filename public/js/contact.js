@@ -5,7 +5,7 @@ $(function() {
                 '<p>' + response.email + '</p>' +
                 '<p>' + response.phone + '</p>' +
                 '<p>' + response.address + '</p>' +
-                '<p>' + "Website: " + '<a href=' + response.website + '>' + response.website + '</a>' + '<p>';
+                '<p>' + "Website: " + '<a href=' + response.website + '>' + "www.GoodKingsCasino.com" + '</a>' + '<p>';
         contactInfo.append(contactHTML);
 		// Not necessary, but for testing
         console.log(response);

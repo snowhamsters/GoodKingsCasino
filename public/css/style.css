@@ -1,13 +1,13 @@
 body {
 	background-color: rgb(23, 2, 31);
 	color: white;
-	padding-left:10px;
+	padding-right: 10px;
 	font-family: georgia, serif;
 }
 
 .container {
 	background-color: rgb(34, 6, 34); 
-	padding: 150px;
+	padding: 50px;
 }
 
 a {
@@ -17,27 +17,29 @@ a {
 h1 {
 	color: white;
 }
-/* 
+
+/*
 .footer{
 	justify-content: space-around;
 	text-align: center;
-} */
+}
 
-/* .footerTop{
+.footerTop{
 	background-color: #222222;
 	padding-left: 100px;
 	padding-right: 100px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-} */
+}
 
-/* .footerBottom{
+.footerBottom{
 	background-color: #444444;
 	padding-left: 100px;
 	padding-right: 100px;
 	padding-top: 25px;
 	padding-bottom: 25px;
-} */
+}
+*/
 
 .accordion-item{
 	background-color: #444444;
@@ -55,32 +57,38 @@ h1 {
 }
 
 #roulette-ball {
-	height: 1.25vw;
-	width: 1.25vw;
-	border-radius: 1.25vw;
+	height: 1.5vw;
+	width: 1.5vw;
+	border-radius: 1.5vw;
 	background-color: white;
 	position: relative;
-	top: 4.85vw;
-	left: 9.4vw;
+	top: 6.05vw;
+	margin-left: auto;
+	margin-right: auto;
 	z-index: 1;
 }
 
 #roulette-wheel {
-    width: 20vw;
-    height: auto;
+	display: block;
+    width: 25vw;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .roulette-black {
 	background-color: black;
+	min-width: 35px;
 }
 
 .roulette-red {
 	background-color: red;
+	min-width: 35px;
 }
 
 .roulette-green {
 	background-color: rgb(70, 120, 70);
 	text-align: center;
+	min-width: 53px;
 }
 
 .selected-bet {
@@ -89,9 +97,12 @@ h1 {
 }
 
 #king {
-	margin-right: -800;
-	position: absolute;
-	right: 285px;
+	display: block;
+	width: 15vw;
+	min-width: 100px;
+	max-width: 300px;
+	margin-left: auto;
+	margin-right: 0px;
 }
 
 #maintxt {
@@ -100,6 +111,9 @@ h1 {
 
 #logo{
 	display: block;
+	width: 50vw;
+	min-width: 250px;
+	max-width: 500px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -107,4 +121,28 @@ h1 {
 .games{
 	text-align: center;
 	color: rgb(230, 168, 79)
+}
+
+.game-icon {
+	width: 25vw;
+	min-width: 50px;
+	max-width: 550px;
+}
+
+#gamesCarousel {
+	display: block;
+	width: 30vw;
+	min-width: 250px;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.d-block {
+	width: 30vw;
+	min-width: 250px;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
 }

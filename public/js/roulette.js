@@ -35,6 +35,7 @@ $(function() {
         }
         // Lock the player from changing bets
         isSpinning = true;
+        $('#bet-amount')[0].disabled = true;
 
         let rng = Math.floor(Math.random() * pockets);
         let endPocket = rouletteWheelNumbers[rng];
@@ -48,11 +49,9 @@ $(function() {
             complete: function(anim) {
                 // Calculate the profit and then call spinCompleted(profit)
                 tellThemToBringMeMyMoney(selectedValue, endPocket, tokensBet);
-                // Remove the selected bet type and reset it to ""
-                $('.selected-bet').removeClass('selected-bet');
-                selectedValue = "";
                 // Allow the player to change bets again
                 isSpinning = false;
+                $('#bet-amount')[0].disabled = false;
             }
         });
     };
@@ -139,6 +138,12 @@ function tellThemToBringMeMyMoney(selectedValue, endPocket, tokensBet) {
 // Function used to update the player's tokens in the database
 function spinCompleted(tokensProfit) {
     console.log(tokensProfit)
+    if (tokensProfit > 0) {
+        alert("Lucky, you have gained: " + tokensProfit + " tokens.")
+    }
+    else {
+        alert("Unlucky, you have lost: " + -tokensProfit + " tokens.")
+    }
     // pseudo-code:
     // database.username.tokens = database.username.tokens + tokensProfit
 }
