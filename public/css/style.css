@@ -118,7 +118,12 @@ h1 {
 	margin-right: auto;
 }
 
-.games{
+#tokens-header {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.games {
 	text-align: center;
 	color: rgb(230, 168, 79)
 }

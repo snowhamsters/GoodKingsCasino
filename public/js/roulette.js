@@ -1,4 +1,16 @@
 $(function() {
+    if (localStorage.getItem("user") === null) {
+        alert("YOU MUST BE LOGGED IN TO PLAY")
+        window.location.href = '/home';
+    };
+
+    const data = {
+        username: localStorage.getItem("user"),
+    };
+    $.post('/get/tokens', data, function(response) {
+        localStorage.setItem("tokens", response.message);
+    });
+
     // European wheel so it doesn't have 00
     let pockets = 37; // 0 to 36
     let singleRotation = 360/pockets;
@@ -20,17 +32,22 @@ $(function() {
         }
     });
 
-    document.getElementById('spin-button').onclick = function() {
+    $('#spin-button').click(function () {
         // Get the number of tokens the user wants to bet
         let tokensBet = $('#bet-amount').val();
-        // Error checking if the user has enough tokens
-        if (tokensBet > 999) { // database.<localstorageUser>.tokens instead of 999
-            alert("You don't have enough tokens!");
-            return null;
-        }
         // Error checking if the user set a bet
         if (tokensBet === "" || selectedValue === "") {
             alert("Select a bet type and enter the number of tokens to bet!")
+            return null;
+        }
+        // Error checking if the user has enough tokens
+        if (parseInt(tokensBet) > parseInt(localStorage.getItem("tokens"))) {
+            alert("You don't have enough tokens!");
+            return null;
+        }
+        // If the bet is below 1
+        if (tokensBet < 1) {
+            alert("Enter a bet greater than 0!")
             return null;
         }
         // Lock the player from changing bets
@@ -54,7 +71,7 @@ $(function() {
                 $('#bet-amount')[0].disabled = false;
             }
         });
-    };
+    });
 
 });
 
@@ -138,12 +155,25 @@ function tellThemToBringMeMyMoney(selectedValue, endPocket, tokensBet) {
 // Function used to update the player's tokens in the database
 function spinCompleted(tokensProfit) {
     console.log(tokensProfit)
+
+    const data = {
+        username: localStorage.getItem("user"),
+        tokens: tokensProfit
+    }
+
+    $.post('/update/tokens', data, function(data) {
+        console.log("Updated Tokens")
+    });
+
     if (tokensProfit > 0) {
         alert("Lucky, you have gained: " + tokensProfit + " tokens.")
     }
     else {
         alert("Unlucky, you have lost: " + -tokensProfit + " tokens.")
     }
-    // pseudo-code:
-    // database.username.tokens = database.username.tokens + tokensProfit
+
+    $.post('/get/tokens', data, function(response) {
+        localStorage.setItem("tokens", response.message);
+        $('#tokens-header').text("TOKENS: " + response.message);
+    });
 }

@@ -2,7 +2,21 @@
  * Other javascript files are for specific pages.
  */
 $(function() {
+    if (localStorage.getItem("user") !== null) {
+        $('#username-header').text("USER: " + localStorage.getItem('user'));
+		$('#tokens-header').text("TOKENS: " + localStorage.getItem('tokens'));
 
+		$('#login-header-button').remove();
+		$('#signup-header-button').text("Logout");
+		$('#signup-header-button').attr('href', '/logout');
+    };
+
+	$('#signup-header-button').click(function() {
+		if (localStorage.getItem("user") !== null) {
+			localStorage.clear();
+			window.location.href = '/home';
+		}
+	});
 });
 
 class Header extends HTMLElement {
@@ -20,8 +34,10 @@ class Header extends HTMLElement {
 				<button class="btn btn-outline-light me-3" type="button"><a href="/store">Store</a></button>
 				<button class="btn btn-outline-light me-3" type="button"><a href="/contact">Contact Us</a></button>
 				<div class="ms-auto">
-					<button class="btn btn-outline-light me-3" type="button"><a href="/login">Login</a></button>
-					<button class="btn btn-outline-light me-3" type="button"><a href="/signup">Signup</a></button>
+					<span id="username-header">[Not Logged In]</span>
+					<span id="tokens-header"></span>
+					<button class="btn btn-outline-light me-3" type="button" id="login-header-button"><a href="/login">Login</a></button>
+					<button class="btn btn-outline-light me-3" type="button" id="signup-header-button"><a href="/signup">Signup</a></button>
 				</div>
 			</form>
 		</nav>

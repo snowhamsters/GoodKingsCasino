@@ -14,8 +14,6 @@
 	<header-component></header-component>
 
 	<div class="container">
-        <button id="spin-button" class="btn btn-primary">Spin Roulette Wheel</button>
-        
         <!-- These two elements should be in a div together because roulette_ball's position is based on roulette_wheel -->
         <div>
             <div id="roulette-ball"></div>
@@ -94,7 +92,8 @@
 
         <p>
             Enter your bet:
-            <input type="number" id="bet-amount">
+            <input type="number" id="bet-amount" min="0" step="1"/>
+            <button id="spin-button" class="btn btn-primary">Spin Roulette Wheel</button>
         </p>
 
         <br><br>
