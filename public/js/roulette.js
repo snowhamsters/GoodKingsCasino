@@ -9,8 +9,9 @@ $(function() {
     };
     $.post('/get/tokens', data, function(response) {
         localStorage.setItem("tokens", response.message);
+        $('#tokens-header').text("TOKENS: " + response.message);
     });
-
+    
     // European wheel so it doesn't have 00
     let pockets = 37; // 0 to 36
     let singleRotation = 360/pockets;

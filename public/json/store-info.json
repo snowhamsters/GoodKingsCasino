@@ -2,45 +2,51 @@
     "items": [
         {
             "id": "1",
-            "name": "5 tokens",
-            "desc": "This is a description.",
+            "name": "5 Tokens",
+            "amount": 5,
             "price": "$5.99",
+            "desc": "Purchase 5 Tokens.",
             "img": "/images/store-img-1.jpg"
         },
         {
             "id": "2",
-            "name": "10 tokens",
+            "name": "10 Tokens",
+            "amount": 10,
             "price": "$9.99",
-            "desc": "This is a description.",
+            "desc": "Purchase 10 Tokens.",
             "img": "/images/store-img-2.jpg"
         },
         {
             "id": "3",
-            "name": "25 tokens",
+            "name": "25 Tokens",
+            "amount": 25,
             "price": "$23.50",
-            "desc": "This is a description.",
+            "desc": "Purchase 25 Tokens.",
             "img": "/images/store-img-3.jpg"
         },
         {
             "id": "4",
-            "name": "60 tokens",
+            "name": "60 Tokens",
+            "amount": 60,
             "price": "$54.99",
-            "desc": "This is a description.",
-            "img": "/images/store-img-3.jpg"
+            "desc": "Purchase 60 Tokens.",
+            "img": "/images/store-img-4.jpg"
         },
         {
             "id": "5",
-            "name": "130 tokens",
+            "name": "130 Tokens",
+            "amount": 130,
             "price": "$114.99",
-            "desc": "This is a description.",
-            "img": "/images/store-img-3.jpg"
+            "desc": "Purchase 130 Tokens.",
+            "img": "/images/store-img-5.jpg"
         },
         {
             "id": "6",
-            "name": "270 tokens",
+            "name": "270 Tokens",
+            "amount": 270,
             "price": "$204.99",
-            "desc": "This is a description.",
-            "img": "/images/store-img-3.jpg"
+            "desc": "Purchase 270 Tokens.",
+            "img": "/images/store-img-6.jpg"
         }
     ]
 }

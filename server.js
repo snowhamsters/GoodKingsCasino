@@ -117,7 +117,7 @@ app.get("/store", (req, res) => {
     res.render("store");
 });
 
-app.get("/store/purchase", (req, res) => {
+app.get("/purchase", (req, res) => {
     let itemID = req.query.id;
     let selectedItem = storeJSON.items.find(i => i.id === itemID);
     // If an item in storeJSON has the given id

@@ -8,8 +8,8 @@ $(function() {
 			let column = $('<div class="col-lg-4"></div>');
 			// HTML allows us to add formatting, imgs, and links. We can also use classes/ids and edit them in css
 			let itemHTML = '<div class="store-item">' +
-					'<a href="store/purchase?id=' + item.id + '"> <h4>' + item.name + '</h4> </a>' +
-					'<a href="store/purchase?id=' + item.id + '"> <img src="' + item.img + '"/> </a>' +
+					'<a href="/purchase?id=' + item.id + '"> <h4>' + item.name + '</h4> </a>' +
+					'<a href="/purchase?id=' + item.id + '"> <img src="' + item.img + '"/> </a>' +
 					'<p>' + item.price + '</p>' +
 					'<p>' + item.desc + '</p>' +
 					'<br><br><br>' +
@@ -22,4 +22,15 @@ $(function() {
 		// Not necessary, but for testing
 		console.log(response);
 	});
+
+	if (localStorage.getItem("user") !== null) {
+		const data = {
+			username: localStorage.getItem("user"),
+		}
+
+		$.post('/get/tokens', data, function(response) {
+			localStorage.setItem("tokens", response.message);
+			$('#tokens-header').text("TOKENS: " + response.message);
+		});
+	}
 });

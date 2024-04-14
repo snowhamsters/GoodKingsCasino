@@ -28,16 +28,16 @@ class Header extends HTMLElement {
 		this.innerHTML = `
 		<nav class="navbar" style="background-color: #332233">
 			<form class="container-fluid justify-content-start">
-				<a class="navbar-brand h1" style="color:#BB33BB" href="/home">Good Kings Casino</a>
-				<button class="btn btn-outline-light me-3" type="button"><a href="/home">Home</a></button>
-				<button class="btn btn-outline-light me-3" type="button"><a href="/games">Games</a></button>
-				<button class="btn btn-outline-light me-3" type="button"><a href="/store">Store</a></button>
-				<button class="btn btn-outline-light me-3" type="button"><a href="/contact">Contact Us</a></button>
+				<a class="navbar-brand h1" style="color:#BB33BB" href="/home"><img id="logo2" src="images/Casino Logo_preview_rev_1.png"/></a>
+				<a href="/home"><button class="btn btn-outline-light me-3" type="button">Home</button></a>
+				<a href="/games"><button class="btn btn-outline-light me-3" type="button">Games</button></a>
+				<a href="/store"><button class="btn btn-outline-light me-3" type="button">Store</button></a>
+				<a href="/contact"><button class="btn btn-outline-light me-3" type="button">Contact Us</button></a>
 				<div class="ms-auto">
 					<span id="username-header">[Not Logged In]</span>
 					<span id="tokens-header"></span>
-					<button class="btn btn-outline-light me-3" type="button" id="login-header-button"><a href="/login">Login</a></button>
-					<button class="btn btn-outline-light me-3" type="button" id="signup-header-button"><a href="/signup">Signup</a></button>
+					<a href="/login"><button class="btn btn-outline-light me-3" type="button" id="login-header-button">Login</button></a>
+					<a href="/signup"><button class="btn btn-outline-light me-3" type="button" id="signup-header-button">Signup</button></a>
 				</div>
 			</form>
 		</nav>
